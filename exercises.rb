@@ -29,3 +29,13 @@ puts "I think #{artists[1]} is great."
 puts "I think #{artists[2]} is great."
 
 #Exercise3
+puts artists[0..1]
+movies.each do |key, value|
+  puts key + ' came out in ' + value.to_s
+end
+puts ages.sort!.reverse!
+movies["Beauty and the Beast"] = [1994, 2017]
+
+#Exercise4
+puts ages.select { |age| age < 30}
+puts ages.max
