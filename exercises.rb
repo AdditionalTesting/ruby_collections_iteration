@@ -39,3 +39,6 @@ movies["Beauty and the Beast"] = [1994, 2017]
 #Exercise4
 puts ages.select { |age| age < 30}
 puts ages.max
+puts coin_flip.count('heads')
+artists.delete('Justin Bieber')
+cities["Toronto"] = 3
