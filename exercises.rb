@@ -18,3 +18,14 @@ puts colors[1]
 puts ages.sort
 ages << 0
 puts movies["Burn After Reading"]
+
+#Exercise 2
+puts colors.last
+cities["New York"] = 10000000
+coin_flip.reverse!
+puts cities["Toronto"]
+puts "I think #{artists[0]} is great."
+puts "I think #{artists[1]} is great."
+puts "I think #{artists[2]} is great."
+
+#Exercise3
