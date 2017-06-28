@@ -20,6 +20,7 @@ ages << 0
 puts movies["Burn After Reading"]
 
 #Exercise 2
+
 puts colors.last
 cities["New York"] = 10000000
 coin_flip.reverse!
@@ -29,6 +30,7 @@ puts "I think #{artists[1]} is great."
 puts "I think #{artists[2]} is great."
 
 #Exercise3
+
 puts artists[0..1]
 movies.each do |key, value|
   puts key + ' came out in ' + value.to_s
@@ -37,8 +39,38 @@ puts ages.sort!.reverse!
 movies["Beauty and the Beast"] = [1994, 2017]
 
 #Exercise4
+
 puts ages.select { |age| age < 30}
 puts ages.max
 puts coin_flip.count('heads')
 artists.delete('Justin Bieber')
 cities["Toronto"] = 3
+
+#Exercise5
+
+puts cities.values.sum
+names.each do |name, age|
+  if age > 30
+    puts "#{name} is old"
+  else
+    puts "#{name} is young"
+  end
+end
+puts colors[-2..-1]
+ages.each do |num|
+  puts num + 1
+end
+colors << 'Yellow' << 'Brown'
+
+#Exercise6
+
+new_movies = {
+  1999 => ['The Matrix', 'Star Wars Episode 1', 'The Mummy' ],
+  2009 => ['Avatar', 'Star Trek', 'District 9'],
+  2019 => ['How to Train Your Dragon 3', 'Toy Story 4', 'Star Wars: Episode 9']
+}
+array_nested = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+england = {:name => 'England', :continent => 'Europe', :island => true }
+france = {:name => 'France', :continent => 'Europe', :island => false }
+canada = {:name => 'Canada', :continent => 'North America', :island => false }
+countries = [england, france, canada]
