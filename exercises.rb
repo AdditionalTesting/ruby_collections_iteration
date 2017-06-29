@@ -90,3 +90,23 @@ sum = 0
 one_to_fifty.each do |num|
   sum += num
 end
+puts sum
+
+another_array = []
+50.times do |addthree|
+  addthree += 1
+  another_array << addthree
+  another_array << addthree
+  another_array << addthree
+end
+puts another_array
+
+noisle = []
+countries.each do |country|
+  if country[:island] == false
+    noisle << country
+  end
+end
+
+puts noisle
+puts countries
