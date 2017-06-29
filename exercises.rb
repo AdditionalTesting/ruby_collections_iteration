@@ -74,3 +74,19 @@ england = {:name => 'England', :continent => 'Europe', :island => true }
 france = {:name => 'France', :continent => 'Europe', :island => false }
 canada = {:name => 'Canada', :continent => 'North America', :island => false }
 countries = [england, france, canada]
+
+#Exercise6 part2
+
+20.times do
+  puts "I will not skateboard in the halls"
+end
+skateboard = []
+20.times do
+  skateboard << "I will not skateboard in the halls"
+end
+one_to_fifty = []
+one_to_fifty = *(1..50)
+sum = 0
+one_to_fifty.each do |num|
+  sum += num
+end
